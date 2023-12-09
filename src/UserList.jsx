@@ -22,7 +22,7 @@ const UserList = ({}) => {
 
   /************************************** */
   return (
-    <div className="max-w-sm md:max-w-2xl lg:max-w-5xl mx-auto ">
+    <div className="max-w-xs md:max-w-2xl lg:max-w-5xl mx-auto ">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {listOfUser?.map((item) => (
           <UserCard key={item.id} {...item} />
