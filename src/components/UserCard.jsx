@@ -1,21 +1,21 @@
 import { Card, Tag } from "antd";
 import React from "react";
 import {
-  CheckCircleOutlined,
-  CompassTwoTone,
+  EnvironmentOutlined,
   GlobalOutlined,
   HomeFilled,
-  IdcardOutlined,
   IdcardTwoTone,
   MailTwoTone,
   MobileTwoTone,
   SearchOutlined,
   TwitterOutlined,
 } from "@ant-design/icons";
+
 const gridStyle = {
   width: "25%",
   textAlign: "center",
 };
+
 const UserCard = ({
   id,
   name,
@@ -63,7 +63,7 @@ const UserCard = ({
             {address.zipcode}
           </Tag>
           <div>
-            <Tag icon={<CompassTwoTone />} color="processing">
+            <Tag icon={<EnvironmentOutlined />} color="processing">
               {address.geo.lat}
             </Tag>
             <Tag color="error">{address.geo.lng}</Tag>
