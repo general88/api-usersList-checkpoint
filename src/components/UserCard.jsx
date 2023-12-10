@@ -29,14 +29,14 @@ const UserCard = ({
   return (
     <div>
       <Card
-        className="uppercase"
+        className="uppercase m-0"
         title={"Company: " + company.name}
         bordered={true}
       >
-        <p className="uppercase font-extrabold text-red-500">
+        <p className="uppercase font-extrabold text-red-500 m-0">
           <IdcardTwoTone /> {name}
         </p>
-        <div className="flex gap-4 lowercase">
+        <div className="flex gap-4 lowercase ">
           <p className="font-semibold">
             <TwitterOutlined /> @{username}
           </p>
@@ -46,7 +46,7 @@ const UserCard = ({
             {website}
           </p>
         </div>
-        <p className="lowercase">
+        <p className="lowercase m-0">
           <MailTwoTone /> {""} {""}
           {email}
         </p>
@@ -70,7 +70,7 @@ const UserCard = ({
           </div>
         </div>
         <div>
-          <p className="text-center capitalize font-medium">
+          <p className="text-center capitalize font-medium mb-0">
             {company.catchPhrase} {company.bs}
           </p>
         </div>
